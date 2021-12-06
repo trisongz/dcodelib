@@ -17,19 +17,24 @@ pip install --upgrade git+https://github.com/trisongz/dcodelib
 
 ## Usage
 
-```python
-import dcodelib
+```bash
+dcode b64 decode ...
 
-## Do something here
+decode bgz encode ...
 
 ```
 
 ---
 
 ## Libraries & Dependencies
-- `Python 3.6`
-- `pylogz'`
 
+- `Python 3.6`
+
+- `pylogz`
+
+- `boltons`
+
+- `pyyaml`
 
 ---
 

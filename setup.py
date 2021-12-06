@@ -16,10 +16,13 @@ root = Path(__file__).parent
 
 requirements = [
     'pylogz',
+    'pyyaml',
+    'typer',
+    'boltons'
 ]
 
 args = {
-    'packages': find_packages(include = ['dcodelib', 'dcodelib.*']),
+    'packages': find_packages(include = ['dcode', 'dcode.*']),
     'install_requires': requirements,
     'long_description': root.joinpath('README.md').read_text(encoding='utf-8'),
     'python_requires': '>=3.6',
@@ -35,7 +38,7 @@ setup(
     version=version,
     url='https://github.com/trisongz/dcodelib',
     license='MIT Style',
-    description='',
+    description='Collection of various serialization methods with cli',
     author='Tri Songz',
     author_email='ts@growthengineai.com',
     long_description_content_type="text/markdown",
